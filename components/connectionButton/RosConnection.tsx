@@ -86,7 +86,8 @@ export function RosConnection() {
               !isConnected &&
                 "shadow-[0px_5px_1px_rgba(239,68,68,_0.7),_0_10px_20px_rgba(239,68,68,_0.7)]"
             )}
-            ref={div2Ref}
+            // ref={div2Ref}
+            // as="div"
             variant={"outline"}
           >
             ROS
