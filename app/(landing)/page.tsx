@@ -4,11 +4,15 @@ import { useEffect, useState } from "react";
 import getDetailedNodes from "@/roslib/nodes";
 import { INode } from "@/types/types";
 import useRosStore from "@/store/rosStore";
+import { redirect } from "next/navigation";
 
 export default function Home() {
   const [nodes, setNodes] = useState<INode[]>([]);
   const { ros } = useRosStore();
 
+  useEffect(() => {
+    redirect("/dashboard/docs");
+  }, []);
   useEffect(() => {
     if (!ros) {
       return;
