@@ -1,0 +1,3 @@
+- [X] Add Loading States to all pages
+- [ ] Add Error States to all pages
+- [ ]
